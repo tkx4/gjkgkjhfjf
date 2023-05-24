@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    
+    <title>test</title>
+    <link rel="stylesheet" type="text/css" href="tt.css">
+    
+    
+    
+</head>
+
+<body>
+    <h1>Welcome</h1>
+   
+
+    <label for="intext">: </label>
+
+    <input type="text" placeholder="Enter your name" class="textbox" id ="text1" >
+    
+
+    <input type="text" placeholder="Enter your age" class="textbox1" id ="text2">
+    
+
+    <button class = "chake" onclick="showInput()">Enter</button>
+    <p class="inout" id = "input-value"></p>
+
+    <div class="image-container"><img src="backgr.jpg" alt="image"></div>
+    <div  class="chake" onclick="showInput()">
+      <p class="inout" id = "input-value"></p>
+    </div>
+
+    <div class="inout">
+      <p class="inout" id="input-value"></p>
+    </div>
+
+    <p id="myText">HELLO</p>
+	<button onclick="changeText()">تغيير النص</button>
+
+    <script>
+
+      function changeText() {
+			document.getElementById("myText").innerHTML = "تم تغيير النص باستخدام JavaScript";
+		}
+
+
+        function showInput() {
+          const inputValue = document.getElementById("text1").value;
+          const inputValue1 = document.getElementById("text2").value;
+          document.getElementById("input-value").innerHTML = "welcome : " + inputValue +" "+ inputValue1;
+        }
+      </script>
+      
+</body>
+
+
+</html>
